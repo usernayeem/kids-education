@@ -10,6 +10,17 @@ body {
     margin: auto !important;
 }
 
+button {
+    width: 197px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: semi-bold;
+    color: #ffffff;
+}
+
 header {
     width: 1440px;
     height: 102px;
@@ -58,7 +69,7 @@ header .item1 {
 }
 
 header .item2 {
-    color: #87CEFA !important;
+    color: #01ACFD !important;
 }
 
 header .item3 {
@@ -70,19 +81,50 @@ header .item4 {
 }
 
 header button {
-    width: 197px;
-    height: 50px;
-    border: none;
-    outline: none;
-    border-radius: 12px;
     background-color: orange;
-    font-size: 20px;
-    font-weight: semi-bold;
-    color: #ffffff;
 }
 
 header .show {
     display: none;
+}
+
+/* hero section starts here */
+
+.hero {
+    width: 1158px;
+    height: 575px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.hero .empowering {
+    color: orange;
+}
+
+.hero .vision {
+    color: #01ACFD;
+}
+
+.hero p {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: regular;
+}
+
+.hero button {
+    margin-top: 24px;
+    background: black;
+}
+
+.hero .hero-image {
+    width: 468.61px !important;
 }
 
 @media (max-width: 768px) {
@@ -109,6 +151,41 @@ header .show {
         width: 46px;
         height: 46px;
         transform: scale(0.8) !important;
+    }
+
+    /* hero section starts here */
+
+    .hero {
+        width: 357px;
+        height: 725px;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        margin-top: 18px;
+        font-size: 14px;
+    }
+
+    .hero button {
+        width: 131px;
+        margin-top: 18px;
+    }
+
+    .hero .hero-image {
+        margin-bottom: -50px !important;
+        width: 336px !important;
+        height: 413px !important;
+    }
+
+    .hero img {
+        width: 336px !important;
+        height: 413px !important;
     }
 
 }
