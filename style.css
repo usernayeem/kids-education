@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 body {
@@ -127,7 +128,95 @@ header .show {
     width: 468.61px !important;
 }
 
-@media (max-width: 768px) {
+/* Standard Curriculum starts here */
+
+.curriculum {
+    width: 1160px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 60px 0;
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.curriculum>img {
+    margin: auto;
+}
+
+.curriculum h2 {
+    text-align: center !important;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.curriculum .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    padding: 80px;
+}
+
+.curriculum .card {
+    width: 367.8px;
+    height: 476.78px;
+    background-image: linear-gradient(#DEF5FF, rgba(255, 255, 255, 0));
+    border-radius: 18.86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.curriculum .card2 {
+    background-image: linear-gradient(#FFF4DC, rgba(255, 255, 255, 0));
+}
+
+.curriculum .card2 {
+    background-image: linear-gradient(#FFF4DC, rgba(255, 255, 255, 0));
+}
+
+.curriculum .card img {
+    width: 130.7px;
+    height: 111.94px;
+}
+
+.curriculum .card h3 {
+    font-size: 24.52px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.curriculum .card p {
+    font-size: 15.09px;
+    font-weight: medium;
+    color: #808080;
+    line-height: 28.3px;
+}
+
+.curriculum .card a {
+    text-decoration: none;
+    font-size: 15.09px;
+    font-weight: bold;
+    color: #64C8FF;
+}
+
+.curriculum .card2 a {
+    color: #F0AA00;
+}
+
+.curriculum .card3 a {
+    color: #8700FF;
+}
+
+
+@media (max-width: 480px) {
     .hide {
         display: none !important;
     }
@@ -186,6 +275,51 @@ header .show {
     .hero img {
         width: 336px !important;
         height: 413px !important;
+    }
+
+    /* Standard Curriculum starts here */
+
+    .curriculum {
+        width: 390px;
+        padding: 40px 0;
+    }
+
+    .curriculum>img {
+        margin: auto;
+    }
+
+    .curriculum h2 {
+        font-size: 26px;
+    }
+
+    .curriculum .cards {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .curriculum .card {
+        width: 357px;
+        height: 321px;
+        border-radius: 12.27px;
+        padding: 36px 28px;
+    }
+
+    .curriculum .card img {
+        width: 92.6px;
+        height: 92.6px;
+    }
+
+    .curriculum .card h3 {
+        font-size: 16.25px;
+    }
+
+    .curriculum .card p {
+        font-size: 10.2px;
+        line-height: 19.22px;
+    }
+
+    .curriculum .card a {
+        font-size: 10.22px;
     }
 
 }
